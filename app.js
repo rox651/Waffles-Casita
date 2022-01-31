@@ -15,11 +15,7 @@ list.forEach(function (listElement) {
     });
 
     listElement.classList.toggle("show-links");
-    if (listElement.classList.contains("show-links")) {
-      btn.classList.replace("fa-plus-square", "fa-minus-square");
-    } else {
-      btn.classList.replace("fa-minus-square", "fa-plus-square");
-    }
+
   });
 });
 
