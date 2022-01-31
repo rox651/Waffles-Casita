@@ -30,7 +30,7 @@ btnBars.addEventListener("click", function () {
   }
 });
 
-const menuLinks = document.querySelectorAll('.nav a[href^="#"]');
+const menuLinks = document.querySelectorAll('.header-nav a[href^="#"]');
 
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener("click", function () {
