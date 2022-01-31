@@ -21,7 +21,7 @@ Fonts
 }
 
 body {
-  animation: fondo 1.6s ease-in-out;
+  animation: fondo 1s ease-in-out;
   font-family: "Josefin Sans", sans-serif;
   background-repeat: no-repeat;
   background: rgb(222, 86, 48);
@@ -121,7 +121,6 @@ header ul li a:hover{
   background: url(img/pexels-pixabay-221083\ \(1\).jpg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  background-attachment: fixed;
   cursor: context-menu;
 }
 
@@ -132,6 +131,9 @@ header ul li a:hover{
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   background: linear-gradient(white, rgb(107, 107, 107));
   opacity: 0.4;
   z-index: -1;
