@@ -3,9 +3,11 @@
 Fonts
 ===============
 */
-@import url("http://fonts.cdnfonts.com/css/gistesy");
+@import url("//db.onlinewebfonts.com/c/20e9fce1ca54ce1d7b7a7329de9bdaef?family=Gistesy");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+@font-face {font-family: "Gistesy"; src: url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.eot"); src: url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.woff") format("woff"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.svg#Gistesy") format("svg"); }
 
 * {
   margin: 0;
