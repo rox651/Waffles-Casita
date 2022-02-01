@@ -3,11 +3,9 @@
 Fonts
 ===============
 */
-@import url("//db.onlinewebfonts.com/c/20e9fce1ca54ce1d7b7a7329de9bdaef?family=Gistesy");
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-
-@font-face {font-family: "Gistesy"; src: url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.eot"); src: url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.woff") format("woff"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/20e9fce1ca54ce1d7b7a7329de9bdaef.svg#Gistesy") format("svg"); }
 
 * {
   margin: 0;
@@ -122,6 +120,7 @@ header ul li a:hover{
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   cursor: context-menu;
+  position: relative;
 }
 
 .start::before {
@@ -129,10 +128,6 @@ header ul li a:hover{
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   background: linear-gradient(white, rgb(107, 107, 107));
   opacity: 0.4;
@@ -140,7 +135,7 @@ header ul li a:hover{
   transition: all 1s ease;
 }
 .start h1 {
-  font-family: "Gistesy", sans-serif;
+  font-family: 'Comforter', cursive;
   font-size: 5em;
   position: relative;
 }
@@ -153,7 +148,7 @@ header ul li a:hover{
 
 }
 .waffle-title {
-  font-family: "Gistesy", sans-serif;
+  font-family: 'Comforter', cursive;
   font-size: 3.5em;
   margin-top: 1.5em;
   text-align: center;
@@ -281,21 +276,21 @@ header ul li a:hover{
   color: #000;
 }
 
-.populares{
+.best-waffles{
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /* background-color: #fcffff; */
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
-.populares h1{
+.best-waffles-title h1{
   margin-top: 90px;
   padding-top: 100px;
-  font-family: "Gistesy", sans-serif;
+  font-family: 'Comforter', cursive;
   font-size: 3.5em;
   text-align: center;
 
 }
-.best {
+.best-waffles-ctn {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
@@ -308,7 +303,7 @@ header ul li a:hover{
   
 }
 
-.best .best-ctn {
+.best-img  {
   background-color: rgb(226, 226, 226);
   width: 33%;
   height: 380px;
@@ -327,13 +322,13 @@ header ul li a:hover{
   transition: all .7s ease-in-out;
 }
 
-.best .best-ctn:first-child{
+.best-img:first-child{
   background-image: url(img/marmol.png);
 
  
 }
 
-.best .best-ctn:first-child::after{
+.best-img:first-child::after{
       content: "WAFFLE MARMOL";
 
       background-color: #e6ca4d9e;
@@ -346,19 +341,19 @@ header ul li a:hover{
 
 }
 
-.best .best-ctn:hover:first-child::after{
+.best-img:hover:first-child::after{
   transform: translateY(0);
 
 }
 
 
-.best .best-ctn:nth-child(2){
+.best-img:nth-child(2){
   background-image: url(img/frutos-rojos.png);
  
 
 }
 
-.best .best-ctn:nth-child(2)::after{
+.best-img:nth-child(2)::after{
   content: "WAFFLE FRUTOS ROJOS";
 
   background-color: #e6ca4d9e;
@@ -371,19 +366,19 @@ header ul li a:hover{
 
 }
 
-.best .best-ctn:hover:nth-child(2)::after{
+.best-img:hover:nth-child(2)::after{
 transform: translateY(0);
 
 }
 
-.best .best-ctn:last-child{
+.best-img:last-child{
   background-image: url(img/mahs.png);
 
 
 }
 
 
-.best .best-ctn:last-child::after{
+.best-img:last-child::after{
   content: "WAFFLE MARSHMELLOW";
   background-color: #e6ca4d9e;
   position: absolute;
@@ -395,24 +390,24 @@ transform: translateY(0);
 
 }
 
-.best .best-ctn:hover:last-child::after{
+.best-img:hover:last-child::after{
 transform: translateY(0);
 
 }
 
-.best-ctn.visible{
+.best-img.visible{
   opacity: 0.8;
   transform: scale(1) translateX(0%);
 }
 
-.best .best-ctn h2{
+.best-img h2{
   font-size: 28px;
   margin-bottom: 35px;
 }
 
 
 
-.best .best-ctn img {
+.best-img img {
   width: 100%;
 } 
 
@@ -534,12 +529,13 @@ transform: translateY(0);
 }
 
 @media screen and (max-width:850px) {
-  .best .best-ctn{
+  .best-img{
     font-size: 1.7em;
   }
 }
 
 @media screen and (max-width: 700px) {
+
   .footer-ctn::before{
     background-image: linear-gradient(
       13deg,
@@ -552,10 +548,10 @@ transform: translateY(0);
     display: none;
   }
 
-  .best{
+  .best-waffles-ctn{
     height: auto;
   }
-  .best .best-ctn{
+  .best-img{
     width: 45%;
     max-width: none;
     margin-bottom: 20px;
@@ -564,7 +560,7 @@ transform: translateY(0);
   }
 
 
-  .best .best-ctn img {
+  .best-img img {
     width: 200px;
   } 
   
@@ -613,7 +609,9 @@ transform: translateY(0);
   .waffle-menu{
     margin: 0 20px;
   }
-
+  .start{
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0 81%);
+  }
 
 }
 
